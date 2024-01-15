@@ -116,7 +116,7 @@ Error generating stack: `+o.message+`
     cursor: pointer;
     
   }
-`,Om=()=>{const[e,t]=tt.useState(""),[n,r]=tt.useState(!1),[l,o]=tt.useState(""),[i,u]=tt.useState([{id:Date.now(),target:"Dafault Note"}]),s=h=>{h.preventDefault(),u(p=>[...p,{id:Date.now(),target:e}]),t(""),console.log("From Submitted"),o("Note Edited"),setTimeout(()=>{r(!1)},2e3)},c=h=>{i.find(p=>{p.id===h&&t(p.target)}),m(h),r(!0),o("Note Editing"),setTimeout(()=>{r(!0)},1500)},m=h=>{const p=i.filter(y=>y.id!=h);u(p),r(!0),o("Notes Deleteed"),setTimeout(()=>{r(!1)},1500)};return H.jsxs(Im,{children:[H.jsx(Tm,{Notes:i,OnSubmitHandle:s,EditNotes:e,setOnchange:t,isDelEdit:n,isDelEditText:l}),H.jsx("hr",{}),H.jsx($m,{Notes:i,OnDeleteHandle:m,OnEditHandle:c})]})},Im=mo.div`
+`,Om=()=>{const[e,t]=tt.useState(""),[n,r]=tt.useState(!1),[l,o]=tt.useState(""),[i,u]=tt.useState([{id:Date.now(),target:"Dafault Note"}]),s=h=>{h.preventDefault(),u(p=>[...p,{id:Date.now(),target:e}]),t(""),console.log("From Submitted"),o("Note Edited"),setTimeout(()=>{r(!1)},2e3)},c=h=>{i.find(p=>{p.id===h&&t(p.target)}),m(h),r(!0),o("Note Editing"),setTimeout(()=>{r(!0)},1500)},m=h=>{const p=i.filter(y=>y.id!=h);u(p),r(!0),o("Notes Deleted"),setTimeout(()=>{r(!1)},1500)};return H.jsxs(Im,{children:[H.jsx(Tm,{Notes:i,OnSubmitHandle:s,EditNotes:e,setOnchange:t,isDelEdit:n,isDelEditText:l}),H.jsx("hr",{}),H.jsx($m,{Notes:i,OnDeleteHandle:m,OnEditHandle:c})]})},Im=mo.div`
     display: flex;
     flex-direction: column ;
     gap: 30px;
